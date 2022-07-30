@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }: AppProps) {
             />
          </Head>
          <Navbar/>
-         <Header/>
          <Component {...pageProps} />
          <Script
             id="bootstrap-cdn"

@@ -1,8 +1,6 @@
-import {
-  createGlobalStyle
-} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-export const AppRoot = createGlobalStyle `
+export const AppRoot = createGlobalStyle`
   :root{
   --black: #000;
   --body: #EAEAEA;

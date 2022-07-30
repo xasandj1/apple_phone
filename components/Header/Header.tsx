@@ -1,11 +1,15 @@
 import React from "react";
-import { HeaderWrapper } from "./headerStyled";
+import { HeaderBox, HeaderBoxTitle, HeaderWrapper } from "./headerStyled";
 
 const Header = () => {
   return (
     <>
       <HeaderWrapper>
-        qalesa
+        <div className="container">
+          <HeaderBox>
+            <HeaderBoxTitle>Аксессуары для Iphone 13 Pro Max</HeaderBoxTitle>
+          </HeaderBox>
+        </div>
       </HeaderWrapper>
     </>
   );
