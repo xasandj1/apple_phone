@@ -65,4 +65,13 @@ color: var(--dark);
 &:hover{
   color: var(--dark);
 }
+`;export const HeartButton = styled.button `
+border: none;
+background: inherit;
+color: var(--grey);
+`;
+export const ShopButton = styled.button `
+border: none;
+color: var(--grey);
+background: inherit;
 `;

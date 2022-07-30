@@ -3,6 +3,7 @@ import {AppRoot} from '../styles/global';
 import Head from "next/head";
 import type { AppProps } from 'next/app'
 import { Navbar } from "../layouts";
+import Header from "../components/Header/Header";
 
 function MyApp({ Component, pageProps }: AppProps) {
    return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             />
          </Head>
          <Navbar/>
+         <Header/>
          <Component {...pageProps} />
          <Script
             id="bootstrap-cdn"

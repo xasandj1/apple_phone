@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import {
+  HeartButton,
   Nav,
   NavbarContent,
   NavBlock,
@@ -11,10 +12,13 @@ import {
   NavSelect,
   NavSelectInner,
   NavSelectTxt,
+  ShopButton,
 } from "./navbarStyled";
 import images from "../../constants/images";
 import { AiOutlineMobile } from 'react-icons/ai'
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
+import { FaRegHeart } from 'react-icons/fa'
+import { HiOutlineShoppingCart } from 'react-icons/hi'
 
 const Navbar = () => {
 
@@ -22,11 +26,6 @@ const Navbar = () => {
   
   const Show = () => {
     setShow(prev => !prev)
-  }
-  const [active, setActive] = useState(false)
-  
-  const Active = () => {
-    setActive(next => !next)
   }
 
   return (
@@ -51,12 +50,7 @@ const Navbar = () => {
                 <NavDropDown className={show ? 'show' : ''}>
                   <NavDropDownList >
                     <NavDropDownItem >
-                      <NavDropDownLink onClick={active}>Apple
-                      {show ? (
-                    <BsChevronUp />
-                  ) : (
-                    <BsChevronDown />
-                  )}
+                      <NavDropDownLink >
                       </NavDropDownLink>
                       <NavDropDownLink >Apple
                       </NavDropDownLink>
@@ -66,7 +60,13 @@ const Navbar = () => {
               </NavSelect>
             </NavBlock>
             <NavBlock>
-              xax
+            <HeartButton>
+            <FaRegHeart fontSize={20}/>
+            </HeartButton>
+            <ShopButton>
+            <HiOutlineShoppingCart fontSize={20}/>
+
+            </ShopButton>
             </NavBlock>
 
           </NavbarContent>
