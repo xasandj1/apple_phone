@@ -1,7 +1,8 @@
 import React from "react";
 import Title from "../UI/Title";
 import { CasesContent, CasesWrapper } from "./casesStyled";
-
+import Title from "../UI/Title.jsx";
+import { CasesWrapper } from "./casesStyled";
 const Cases = () => {
   return (
     <>
@@ -10,7 +11,7 @@ const Cases = () => {
           <Title title={"Чехлы"} />
           <CasesContent>
             <div className="row">
-              
+
             </div>
           </CasesContent>
         </div>
