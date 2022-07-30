@@ -10,6 +10,8 @@ export const AppRoot = createGlobalStyle `
   --white: #FFFFFF;
   --gold: #FFA542;
   --grey: #838383;
+  --lightGray:#838383;
+
 }
 @font-face {
   font-family: 'Manrope';

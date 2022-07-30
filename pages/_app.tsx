@@ -1,7 +1,7 @@
 import Script from "next/script";
-import {AppRoot} from '../styles/global';
+import { AppRoot } from "../styles/global";
 import Head from "next/head";
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
 import { Navbar } from "../layouts";
 import Header from "../components/Header/Header";
 
@@ -25,4 +25,4 @@ function MyApp({ Component, pageProps }: AppProps) {
    )
 }
 
-export default MyApp
+export default MyApp;
