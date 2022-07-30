@@ -1,8 +1,6 @@
-import {
-  createGlobalStyle
-} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-export const AppRoot = createGlobalStyle `
+export const AppRoot = createGlobalStyle`
   :root{
   --black: #000;
   --body: #EAEAEA;
@@ -12,18 +10,18 @@ export const AppRoot = createGlobalStyle `
   --grey: #838383;
   --lightGray:#838383;
 
-}
-@font-face {
+  }
+  @font-face {
   font-family: 'Manrope';
   src: url('../assets/fonts/Manrope-Bold.ttf');
   font-weight: 700;
-}
-@font-face {
+  }
+  @font-face { 
   font-family: 'Montserrat';
   src: url('../assets/fonts/Montserrat-Light.ttf');
   font-weight: 300;
-}
-@font-face {
+  }
+  @font-face {
   font-family: 'Montserrat';
   src: url('../assets/fonts/Montserrat-Bold.ttf');
   font-weight: 700;
@@ -57,11 +55,11 @@ export const AppRoot = createGlobalStyle `
   color: inherit;
   text-decoration: none !important;
 }
-ul,h1,h2,h3,h4,h5,h6,p{
+ ul,h1,h2,h3,h4,h5,h6,p{
   padding-left: 0 !important;
   margin-bottom: 0 !important;
 }
-.container{
+ .container{
   max-width: 1140px;
   width: 100%;
   padding: 0px 15px;

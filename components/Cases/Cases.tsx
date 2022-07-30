@@ -1,12 +1,19 @@
 import React from "react";
 import Title from "../UI/Title";
-import { CasesWrapper } from "./casesStyled";
+import { CasesContent, CasesWrapper } from "./casesStyled";
 
 const Cases = () => {
   return (
     <>
       <CasesWrapper>
-        <Title title={'Hello'}/>
+        <div className="container">
+          <Title title={"Чехлы"} />
+          <CasesContent>
+            <div className="row">
+              
+            </div>
+          </CasesContent>
+        </div>
       </CasesWrapper>
     </>
   );
